@@ -1,0 +1,134 @@
+/* ===== Variables (overridden per-theme lower in this file) ===== */
+:root {
+  --bg: #ffffff;
+  --text: #1f2d3d;
+  --muted: #5a6b7b;
+  --accent: #0d7a8c;
+  --accent-contrast: #ffffff;
+  --panel: #f7fafb;
+  --border: #e2e8ec;
+  --font-head: 'Segoe UI', system-ui, sans-serif;
+  --font-body: 'Segoe UI', system-ui, sans-serif;
+}
+
+/* ===== Reset / base (mobile-first) ===== */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; }
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-body);
+  font-size: 17px;
+  line-height: 1.6;
+}
+
+img { max-width: 100%; display: block; }
+
+h1, h2 { font-family: var(--font-head); line-height: 1.2; }
+
+/* ===== Layout container ===== */
+.container { width: 100%; max-width: 760px; margin: 0 auto; padding: 0 18px; }
+
+section { padding: 32px 0; border-bottom: 1px solid var(--border); }
+section:last-child { border-bottom: none; }
+section h2 {
+  font-size: 14px; letter-spacing: .14em; text-transform: uppercase;
+  color: var(--accent); margin-bottom: 16px;
+}
+
+/* ===== Hero ===== */
+.hero { background: var(--accent); color: var(--accent-contrast); text-align: center; padding: 40px 18px 0; }
+.hero .kicker { font-size: 12px; letter-spacing: .22em; text-transform: uppercase; opacity: .85; }
+.hero h1 { font-size: 40px; margin: 10px 0 6px; }
+.hero .subtitle { font-size: 16px; opacity: .9; margin-bottom: 28px; }
+.hero-img { height: 200px; border-radius: 10px 10px 0 0; object-fit: cover; width: 100%; }
+
+/* ===== Intro ===== */
+.intro p { color: var(--text); }
+
+/* ===== Gallery ===== */
+.image-card {
+  margin-bottom: 22px; border-radius: 10px; overflow: hidden;
+  border: 1px solid var(--border); background: var(--panel);
+}
+.image-card img, .image-card .img { width: 100%; }
+.image-card .img { height: 220px; }
+.image-card figcaption { padding: 12px 14px; font-size: 15px; color: var(--muted); }
+
+/* ===== Video ===== */
+.video-frame {
+  width: 100%; aspect-ratio: 16 / 9; border: none; border-radius: 10px;
+  background: var(--panel);
+}
+.video-frame iframe { width: 100%; height: 100%; border: none; }
+
+/* ===== References ===== */
+.references ol { padding-left: 22px; }
+.references li { margin-bottom: 10px; color: var(--muted); }
+
+/* ===== Footer ===== */
+.site-footer { background: var(--accent); color: var(--accent-contrast); text-align: center; padding: 20px; font-size: 14px; }
+
+/* ===== Placeholder boxes (visible until Amilia replaces them) ===== */
+.placeholder {
+  display: flex; align-items: center; justify-content: center;
+  text-align: center; color: var(--muted); font-size: 14px; letter-spacing: .04em;
+  background: repeating-linear-gradient(45deg, var(--panel), var(--panel) 12px, var(--border) 12px, var(--border) 24px);
+}
+
+/* ===== Wider screens (scale up gracefully) ===== */
+@media (min-width: 720px) {
+  .hero h1 { font-size: 52px; }
+  .hero-img { height: 300px; }
+  .image-card .img { height: 320px; }
+}
+
+/* ===================================================================
+   THEMES — set <body data-theme="..."> in index.html to switch.
+   faience (default) is already defined in :root above.
+   =================================================================== */
+
+/* --- Papyrus: warm, classic, serif (museum-label feel) --- */
+[data-theme="papyrus"] {
+  --bg: #f3e9d2;
+  --text: #3a2e1f;
+  --muted: #6b5a32;
+  --accent: #8a6d2e;
+  --accent-contrast: #fdf7e6;
+  --panel: #ece0c2;
+  --border: #cdb985;
+  --font-head: Georgia, 'Times New Roman', serif;
+  --font-body: Georgia, 'Times New Roman', serif;
+}
+[data-theme="papyrus"] .hero { background: #e3d3aa; color: #6b4f1d; }
+[data-theme="papyrus"] .site-footer { background: #e3d3aa; color: #6b5a32; }
+
+/* --- Dark & Gold: dramatic, museum-at-night --- */
+[data-theme="dark-gold"] {
+  --bg: #14110c;
+  --text: #e8e0cf;
+  --muted: #b3a578;
+  --accent: #d4af37;
+  --accent-contrast: #14110c;
+  --panel: #1f190f;
+  --border: #3a2f1a;
+  --font-head: 'Segoe UI', system-ui, sans-serif;
+  --font-body: 'Segoe UI', system-ui, sans-serif;
+}
+[data-theme="dark-gold"] .hero { background: linear-gradient(#1d1810, #14110c); color: #f0d77a; }
+[data-theme="dark-gold"] .site-footer { background: #1b160e; color: #b3a578; }
+
+/* --- Faience: clean & bright (DEFAULT, lives in :root). Listed here for clarity. --- */
+[data-theme="faience"] {
+  --bg: #ffffff;
+  --text: #1f2d3d;
+  --muted: #5a6b7b;
+  --accent: #0d7a8c;
+  --accent-contrast: #ffffff;
+  --panel: #f7fafb;
+  --border: #e2e8ec;
+  --font-head: 'Segoe UI', system-ui, sans-serif;
+  --font-body: 'Segoe UI', system-ui, sans-serif;
+}
