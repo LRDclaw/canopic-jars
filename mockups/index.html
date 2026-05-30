@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Canopic Jars — Style Options</title>
+<style>
+  :root { --gap: 20px; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, system-ui, sans-serif;
+    background: #1c1c1e; color: #eee; padding: 24px 12px 64px;
+    -webkit-text-size-adjust: 100%;
+  }
+  .intro { max-width: 480px; margin: 0 auto 28px; text-align: center; }
+  .intro h1 { font-size: 22px; margin-bottom: 8px; }
+  .intro p { font-size: 14px; color: #aaa; line-height: 1.5; }
+  .frames { display: flex; flex-direction: column; align-items: center; gap: 40px; }
+  .phone {
+    width: 100%; max-width: 390px; border-radius: 28px;
+    overflow: hidden; box-shadow: 0 8px 40px rgba(0,0,0,.6);
+    border: 6px solid #000;
+  }
+  .tag {
+    text-align: center; font-size: 13px; letter-spacing: .12em;
+    text-transform: uppercase; color: #888; margin-bottom: 12px; font-weight: 600;
+  }
+  .tag b { color: #fff; }
+
+  /* ===== Shared mockup structure ===== */
+  .scr { font-size: 14px; line-height: 1.5; }
+  .hero { padding: 28px 20px; text-align: center; }
+  .hero .kicker { font-size: 11px; letter-spacing: .2em; text-transform: uppercase; opacity: .8; }
+  .hero h2 { font-size: 28px; margin: 8px 0 4px; }
+  .hero .by { font-size: 13px; opacity: .85; }
+  .heroimg { height: 120px; display:flex; align-items:center; justify-content:center; font-size:11px; letter-spacing:.1em; }
+  .body { padding: 20px; }
+  .body .lead { margin-bottom: 18px; }
+  .sec-title { font-size: 12px; letter-spacing: .15em; text-transform: uppercase; margin-bottom: 12px; opacity:.8; }
+  .imgcard { border-radius: 8px; overflow: hidden; margin-bottom: 16px; }
+  .imgph { height: 150px; display:flex; align-items:center; justify-content:center; font-size:11px; letter-spacing:.1em; }
+  .cap { padding: 8px 10px; font-size: 12px; line-height:1.4; }
+  .refs { padding: 16px 20px; }
+  .refs ol { padding-left: 18px; font-size: 12px; line-height: 1.7; }
+  .ftr { padding: 16px; text-align:center; font-size: 11px; }
+
+  /* ===== Theme A: Museum / Papyrus ===== */
+  .A { background:#f3e9d2; color:#3a2e1f; font-family: Georgia, 'Times New Roman', serif; }
+  .A .hero { background:#e3d3aa; border-bottom:3px double #b69b5e; }
+  .A .heroimg { background:#cdb985; color:#6b5a32; }
+  .A .hero h2 { color:#6b4f1d; }
+  .A .imgph { background:#d8c79a; color:#6b5a32; }
+  .A .cap { background:#ece0c2; color:#5a4a2c; }
+  .A .sec-title { color:#8a6d2e; }
+  .A .refs { background:#ece0c2; }
+  .A .ftr { background:#e3d3aa; color:#6b5a32; }
+
+  /* ===== Theme B: Dark & Gold ===== */
+  .B { background:#14110c; color:#e8e0cf; font-family:'Segoe UI', system-ui, sans-serif; }
+  .B .hero { background:linear-gradient(#1d1810,#14110c); }
+  .B .hero .kicker { color:#d4af37; }
+  .B .hero h2 { color:#f0d77a; font-weight:700; letter-spacing:.02em; }
+  .B .heroimg { background:#241d12; color:#8a7332; border:1px solid #3a2f1a; }
+  .B .imgph { background:#221c12; color:#7a6630; }
+  .B .imgcard { border:1px solid #3a2f1a; }
+  .B .cap { background:#1b160e; color:#cdbf94; }
+  .B .sec-title { color:#d4af37; }
+  .B .refs { background:#1b160e; }
+  .B .ftr { background:#1b160e; color:#8a7332; border-top:1px solid #3a2f1a; }
+
+  /* ===== Theme C: Clean & Bright (faience blue) ===== */
+  .C { background:#ffffff; color:#1f2d3d; font-family:'Segoe UI', system-ui, sans-serif; }
+  .C .hero { background:#0d7a8c; color:#fff; }
+  .C .hero .kicker { color:#bdeaf0; }
+  .C .hero h2 { color:#fff; font-weight:700; }
+  .C .heroimg { background:#e8f4f6; color:#0d7a8c; }
+  .C .imgph { background:#eef2f5; color:#7a8a99; }
+  .C .imgcard { box-shadow:0 1px 6px rgba(0,0,0,.08); }
+  .C .cap { background:#f7fafb; color:#445; }
+  .C .sec-title { color:#0d7a8c; }
+  .C .refs { background:#f7fafb; }
+  .C .ftr { background:#0d7a8c; color:#cdeef2; }
+</style>
+</head>
+<body>
+  <div class="intro">
+    <h1>Canopic Jars — 3 visual styles</h1>
+    <p>Each phone below shows the same page in a different style. They all share the structure you approved (hero → intro → captioned gallery → references → footer). Reply with <b>A</b>, <b>B</b>, or <b>C</b>.</p>
+  </div>
+
+  <div class="frames">
+
+    <!-- A -->
+    <div>
+      <div class="tag">Style <b>A</b> — Museum / Papyrus (warm, classic, serif)</div>
+      <div class="phone">
+        <div class="scr A">
+          <div class="hero">
+            <div class="kicker">Ancient Egypt</div>
+            <h2>Canopic Jars</h2>
+            <div class="by">A project by Amilia</div>
+          </div>
+          <div class="heroimg">[ hero image ]</div>
+          <div class="body">
+            <p class="lead">A short introduction to Canopic Jars and their role in ancient Egyptian burial will go here.</p>
+            <div class="sec-title">Gallery</div>
+            <div class="imgcard"><div class="imgph">[ image ]</div><div class="cap">Caption: what this jar is and where it's from.</div></div>
+            <div class="imgcard"><div class="imgph">[ image ]</div><div class="cap">Caption: another jar with a short description.</div></div>
+          </div>
+          <div class="refs"><div class="sec-title">References</div><ol><li>Source one — author, year.</li><li>Source two — author, year.</li></ol></div>
+          <div class="ftr">A school project by Amilia · 2026</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- B -->
+    <div>
+      <div class="tag">Style <b>B</b> — Dark &amp; Gold (dramatic, museum-night)</div>
+      <div class="phone">
+        <div class="scr B">
+          <div class="hero">
+            <div class="kicker">Ancient Egypt</div>
+            <h2>Canopic Jars</h2>
+            <div class="by">A project by Amilia</div>
+          </div>
+          <div class="heroimg">[ hero image ]</div>
+          <div class="body">
+            <p class="lead">A short introduction to Canopic Jars and their role in ancient Egyptian burial will go here.</p>
+            <div class="sec-title">Gallery</div>
+            <div class="imgcard"><div class="imgph">[ image ]</div><div class="cap">Caption: what this jar is and where it's from.</div></div>
+            <div class="imgcard"><div class="imgph">[ image ]</div><div class="cap">Caption: another jar with a short description.</div></div>
+          </div>
+          <div class="refs"><div class="sec-title">References</div><ol><li>Source one — author, year.</li><li>Source two — author, year.</li></ol></div>
+          <div class="ftr">A school project by Amilia · 2026</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- C -->
+    <div>
+      <div class="tag">Style <b>C</b> — Clean &amp; Bright (faience blue, very readable)</div>
+      <div class="phone">
+        <div class="scr C">
+          <div class="hero">
+            <div class="kicker">Ancient Egypt</div>
+            <h2>Canopic Jars</h2>
+            <div class="by">A project by Amilia</div>
+          </div>
+          <div class="heroimg">[ hero image ]</div>
+          <div class="body">
+            <p class="lead">A short introduction to Canopic Jars and their role in ancient Egyptian burial will go here.</p>
+            <div class="sec-title">Gallery</div>
+            <div class="imgcard"><div class="imgph">[ image ]</div><div class="cap">Caption: what this jar is and where it's from.</div></div>
+            <div class="imgcard"><div class="imgph">[ image ]</div><div class="cap">Caption: another jar with a short description.</div></div>
+          </div>
+          <div class="refs"><div class="sec-title">References</div><ol><li>Source one — author, year.</li><li>Source two — author, year.</li></ol></div>
+          <div class="ftr">A school project by Amilia · 2026</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>
