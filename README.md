@@ -36,6 +36,26 @@ a video file in `images/`. If you don't want a video, delete the whole `<section
 ### Add references
 In the `References` section, edit the list items. Add or remove `<li>...</li>` lines.
 
+## Preview your changes BEFORE publishing
+
+You can see your edits locally without committing anything. They're just files, so
+there's nothing to build.
+
+**Easiest:** open `index.html` directly in a web browser (double-click it, or right-click →
+Open With → your browser). Refresh after each save to see changes.
+
+**Live preview server** (lets you view from another device on the same WiFi):
+1. In a terminal, from this folder, run:
+   ```bash
+   python3 -m http.server 8077
+   ```
+2. On this machine open `http://localhost:8077/`, or from another device on the same
+   network open `http://192.168.88.14:8077/`.
+3. Edit a file, **save**, then **refresh** the browser — your change shows up immediately.
+4. Press `Ctrl+C` in the terminal to stop the preview server when done.
+
+Nothing is published until you commit and push (next section).
+
 ## How to put it online (GitHub Pages)
 
 First time:
