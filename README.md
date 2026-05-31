@@ -1,4 +1,4 @@
-# Canopic Jars — Amilia's Project Site
+# Canopic Jars — Amila Galvao's Project Site
 
 A single-page website for the Canopic Jars project. Everything is plain HTML and CSS —
 no special software needed to edit it.
@@ -12,7 +12,7 @@ no special software needed to edit it.
 
 ## How to edit (open `index.html` in any text editor)
 
-Look for green `<!-- Amilia: ... -->` notes — they tell you exactly what to change.
+Look for green `<!-- Amila: ... -->` notes — they tell you exactly what to change.
 
 ### Change the look (3 styles)
 At the top of `index.html` find:
