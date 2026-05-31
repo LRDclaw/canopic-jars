@@ -113,8 +113,6 @@ def build(theme_name):
     cx = W // 2
     f_kick = font(t, "bold", 38)
     kick = "ANCIENT EGYPT"
-    d.line([(cx - 260, 92), (cx - 170, 92)], fill=t["hero_text"], width=2)
-    d.line([(cx + 170, 92), (cx + 260, 92)], fill=t["hero_text"], width=2)
     kw = text_w(d, kick, f_kick, 11)
     draw_tracked(d, (cx - kw / 2, 74), kick, f_kick, t["hero_text"], 11)
 
